@@ -5,9 +5,17 @@ const ViewAll = () => {
     const [data, changeData] = useState(
 
         [
-            { "Name": "Aryan", "Admno": 101, "Dept": "CS" },
-            { "Name": "Kevin", "Admno": 102, "Dept": "CS" },
-            { "Name": "Zara", "Admno": 103, "Dept": "CS" }
+            {
+
+                "name": "Rizna",
+                "admno": "678",
+                "college": "FISAT",
+                "dob": "10-03-2003",
+                "emailid": "rizna123@gmail.com"
+
+
+            }
+
         ]
     )
     return (
@@ -15,29 +23,37 @@ const ViewAll = () => {
 
             <NavigationBar />
             <div className="container">
-                <br></br>
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <div className="row g-3">
-                            {
-                                data.map(
-                                    (value, index) => {
-                                        return <div className="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                        <div className="row">
+                            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                                            <div class="card">
-                                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" class="card-img-top" alt="..." />
-                                                <div class="card-body">
-                                                    <h5 class="card-title">{value.Name}</h5>
-                                                    <p class="card-text">Admission No: {value.Admno}</p>
-                                                    <p class="card-text">Department: {value.Dept}</p>
-                                                    <a href="#" class="btn btn-primary">View Details</a>
-                                                </div>
-                                            </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">NAME</th>
+                                            <th scope="col">ADMISSION NO</th>
+                                            <th scope="col">COLLEGE</th>
+                                            <th scope="col">DATE OF BIRTH</th>
+                                            <th scope="col">EMAIL ID</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       {data.map(
+                                        (value, index)=>{
+                                            return  <tr>
+                                            <th scope="row">{value.name}</th>
+                                            <td>{value.admno}</td>
+                                            <td>{value.college}</td>
+                                            <td>{value.dob}</td>
+                                            <td>{value.emailid}</td>
+                                        </tr>
+                                        }
+                                       )}
+                                    </tbody>
+                                </table>
 
-                                        </div>
-                                    }
-                                )
-                            }
+                            </div>
                         </div>
                     </div>
                 </div>

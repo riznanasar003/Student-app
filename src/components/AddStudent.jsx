@@ -8,13 +8,10 @@ const AddStudent = () => {
 
             "name": "",
             "admno": "",
-            "rollno": "",
-            "parentname": "",
             "college": "",
             "dob": "",
-            "emailid": "",
-            "password": "",
-            "confirmpassword": ""
+            "emailid": ""
+            
 
         }
 
@@ -46,18 +43,6 @@ const AddStudent = () => {
                                 <input type="text" className="form-control" name="admno" value={data.admno} onChange={inputHandler} />
 
                             </div>
-                            <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-
-                                <label htmlFor="" className="form-label" >Roll no</label>
-                                <input type="text" className="form-control" name="rollno" value={data.rollno} onChange={inputHandler}/>
-
-                            </div>
-                            <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-
-                                <label htmlFor="" className="form-label" >Parent Name</label>
-                                <input type="text" className="form-control" name="parentname" value={data.parentname} onChange={inputHandler} />
-
-                            </div>
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                                 <label htmlFor="" className="form-label" >College Name</label>
@@ -74,18 +59,6 @@ const AddStudent = () => {
 
                                 <label htmlFor="" className="form-label" >Email Id</label>
                                 <input type="text" className="form-control" name="emailid" value={data.emailid} onChange={inputHandler}/>
-
-                            </div>
-                            <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-
-                                <label htmlFor="" className="form-label">Password</label>
-                                <input type="password" id="" className="form-control"  name="password" value={data.password} onChange={inputHandler}/>
-
-                            </div>
-                            <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-
-                                <label htmlFor="" className="form-label" >Confirm password</label>
-                                <input type="password" className="form-control" name="confirmpassword" value={data.confirmpassword} onChange={inputHandler}/>
 
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
